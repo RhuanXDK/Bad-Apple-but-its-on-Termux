@@ -19,10 +19,10 @@ DISCLAIMER: **THIS CODE DOESNT WORK WITH WINDOWS**
 ## 📷 Screenshots
 
 ### 30 FPS 4:3 version example
-![30 FPS](assets/example.png)
+![30 FPS](main/assets/example.png)
 
 ### 60 FPS 16:9 version example
-![60 FPS](assets/example2.png)
+![60 FPS](main/assets/example2.png)
 
 
 ---
