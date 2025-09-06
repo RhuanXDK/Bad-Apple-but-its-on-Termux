@@ -19,10 +19,10 @@ DISCLAIMER: **THIS CODE DOESNT WORK WITH WINDOWS**
 ## 📷 Screenshots
 
 ### 30 FPS 4:3 version example
-![30 FPS](main/assets/example.png)
+![30 FPS](https://cdn.discordapp.com/attachments/1059282510577668130/1413903018671476936/example.jpg?ex=68bd9f4c&is=68bc4dcc&hm=6f19b5729238ce207fe3cbddadd1c8b39cd342aa15ff8c0b359e24fb0743bb31&)
 
 ### 60 FPS 16:9 version example
-![60 FPS](main/assets/example2.png)
+![60 FPS](https://cdn.discordapp.com/attachments/1059282510577668130/1413903011893481593/example2.jpg?ex=68bd9f4b&is=68bc4dcb&hm=5f3e12797a39a6a412e0a024afc393a27aaf43a69889d489ffa3835093bee591&)
 
 
 ---
