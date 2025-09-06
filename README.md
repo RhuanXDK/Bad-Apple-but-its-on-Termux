@@ -1,13 +1,13 @@
 # Bad Apple!! but plays on Termux
 
 This project plays **Bad Apple!!** in the Termux terminal using ASCII art with synchronized audio.  
-It supports **1080p@60fps 16:9**, automatic frame extraction, caching, and runs smoothly in **Termux** or Linux terminals.
-DISCLAIMER: **THIS CODE ONLY WORKS WITH TERMUX!**
+It supports **360p@30fps and 1080p@60fps 16:9**, automatic frame extraction, caching, and runs smoothly in **Termux** or Linux terminals
+DISCLAIMER: **THIS CODE DOESNT WORK WITH WINDOWS**
 ---
 
 ## ✨ Features
 - Converts video frames into ASCII art (Saves the ASCII frames for faster execution)  
-- Supports **360p / 30fps / 4:3** (original Bad Apple video) **1080p / 60fps / 16:9** videos  
+- Supports **360p@30 4:3** (original Bad Apple video) and **1080p@60 16:9** 
 - Audio playback perfectly synced with video  
 - Automatic download from YouTube via `yt-dlp`
 - Saves the video frames in a folder 
@@ -18,10 +18,10 @@ DISCLAIMER: **THIS CODE ONLY WORKS WITH TERMUX!**
 ## 📷 Screenshots
 
 ### 30 FPS 4:3 version example
-![Bad Apple ASCII Example 1](assets/example1.png)
+![example 1](assets/example1.png)
 
 ### 60 FPS 16:9 version example
-![Bad Apple ASCII Example 2](assets/example2.png)
+![example 2](assets/example2.png)
 
 
 ---
@@ -29,26 +29,34 @@ DISCLAIMER: **THIS CODE ONLY WORKS WITH TERMUX!**
 ## 📦 Requirements
 **Termux Android**
 
-Install dependencies:
+Required dependencies `Python, FFmpeg, Pillow, yt-dlp, pydub`
+
+
 **Before you put the commands below, use `termux-setup-storage` To allow storage to Termux**
 
+
+## How to install and run the code
+
+1- Install Python and FFmpeg first:
 ```bash
 pkg install python ffmpeg
+```
+2 - Install the `pip` dependencies
+```bash
 pip install yt-dlp pillow pydub
 ```
 
-## How to Install and run the code
-
-To run the file faster, you will create a .sh file directly from terminal
+3 - To run the file faster, you will create a .sh file directly from terminal
 
 use:
 ```bash
 pkg install nano
 ```
-After installing nano, you will create the .sh file on it, using:
+
+4 - After installing nano, you will create the .sh file on it, using:
 
 ```bash
-nano "file_name_here".sh
+nano 30fps.sh
 ```
 put these commands there:
 
@@ -68,4 +76,4 @@ python 60fps.py https://youtu.be/W3MkjcHOGH8
 ```
 Ctrl + O to save and Ctrl + X to exit nano
 
-Then you will install Python, FFmpeg (using the `pkg install` command) and the necessary dependencies (commands shown in requirements). The code should work if you have installed correctly 
+5 - To run the code, use `sh 30fps.sh` and wait until the code create everything, (there will be a log for you to watch)
