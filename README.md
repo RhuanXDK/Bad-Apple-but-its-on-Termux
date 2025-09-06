@@ -1,7 +1,8 @@
-# Bad Apple!! but plays on Termux
+# Bad Apple!! but it plays on Termux
 
 This project plays **Bad Apple!!** in the Termux terminal using ASCII art with synchronized audio.  
 It supports **360p@30fps and 1080p@60fps 16:9**, automatic frame extraction, caching, and runs smoothly in **Termux** or Linux terminals
+
 DISCLAIMER: **THIS CODE DOESNT WORK WITH WINDOWS**
 ---
 
@@ -18,10 +19,10 @@ DISCLAIMER: **THIS CODE DOESNT WORK WITH WINDOWS**
 ## 📷 Screenshots
 
 ### 30 FPS 4:3 version example
-![example 1](assets/example1.png)
+![30 FPS](main/example.png)
 
 ### 60 FPS 16:9 version example
-![example 2](assets/example2.png)
+![60 FPS](main/example2.png)
 
 
 ---
@@ -44,6 +45,39 @@ pkg install python ffmpeg
 2 - Install the `pip` dependencies
 ```bash
 pip install yt-dlp pillow pydub
+```
+
+3 - To run the file faster, you will create a .sh file directly from terminal
+
+use:
+```bash
+pkg install nano
+```
+
+4 - After installing nano, you will create the .sh file on it, using:
+
+```bash
+nano 30fps.sh
+```
+put these commands there:
+
+```bash
+cd storage
+cd shared
+clear
+python 30fps.py https://youtu.be/FtutLA63Cp8
+```
+or
+
+```bash
+cd storage
+cd shared
+clear
+python 60fps.py https://youtu.be/W3MkjcHOGH8
+```
+Ctrl + O to save and Ctrl + X to exit nano
+
+5 - To run the code, use `sh 30fps.sh` and wait until the code create everything, (there will be a log for you to watch)pip install yt-dlp pillow pydub
 ```
 
 3 - To run the file faster, you will create a .sh file directly from terminal
