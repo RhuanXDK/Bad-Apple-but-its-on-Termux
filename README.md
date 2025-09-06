@@ -1,7 +1,8 @@
-# Bad Apple!! but plays on Termux
+# Bad Apple!! but it plays on Termux
 
 This project plays **Bad Apple!!** in the Termux terminal using ASCII art with synchronized audio.  
 It supports **360p@30fps and 1080p@60fps 16:9**, automatic frame extraction, caching, and runs smoothly in **Termux** or Linux terminals
+
 DISCLAIMER: **THIS CODE DOESNT WORK WITH WINDOWS**
 ---
 
@@ -18,10 +19,10 @@ DISCLAIMER: **THIS CODE DOESNT WORK WITH WINDOWS**
 ## 📷 Screenshots
 
 ### 30 FPS 4:3 version example
-![example 1](assets/example1.png)
+![30 FPS](main/example.png)
 
 ### 60 FPS 16:9 version example
-![example 2](assets/example2.png)
+![60 FPS](main/example2.png)
 
 
 ---
