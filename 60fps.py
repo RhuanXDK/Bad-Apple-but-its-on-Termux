@@ -65,7 +65,7 @@ def list_frame_files(frames_dir):
 
 def download_video(url, outpath):
     if os.path.exists(outpath):
-        print("Video already exists, skipping download.")
+        print("Video already exists, skipping...")
         return outpath
     print("Downloading video...")
     ydl_opts = {"format":"bestvideo[height<=1080][fps<=60]+bestaudio/best",
@@ -76,7 +76,7 @@ def download_video(url, outpath):
 
 def extract_audio(video_path, out_audio_path):
     if os.path.exists(out_audio_path):
-        print("Audio already exists, skipping extraction.")
+        print("Audio already exists, skipping...")
         return
     print("Extracting audio...")
     cmd = ["ffmpeg","-y","-i",video_path,"-vn","-acodec","pcm_s16le","-ar","44100","-ac","2",out_audio_path]
@@ -85,7 +85,7 @@ def extract_audio(video_path, out_audio_path):
 
 def extract_frames(video_path, frames_dir, fps):
     if list_frame_files(frames_dir):
-        print("Frames already exist, skipping extraction.")
+        print("Frames already exist, skipping...")
         return
     print("Extracting frames...")
     pattern = os.path.join(frames_dir,"frame_%06d.png")
@@ -101,7 +101,7 @@ def get_fps_and_duration(video_path, url):
 def save_ascii_frames(frame_files, term_width, term_height):
     ascii_files = sorted(glob.glob(os.path.join(ASCII_DIR,"frame_*.txt")))
     if ascii_files and len(ascii_files) == len(frame_files):
-        print("ASCII frames already exist, skipping conversion.")
+        print("ASCII frames already exist, skipping...")
         return ascii_files
     print("Converting frames to ASCII...")
     for i,fpath in enumerate(frame_files):
